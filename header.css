@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 10vh;
+    background-color: rgb(61,61,61);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.name{
+    margin: 0 49vw 0 4vw;
+    
+}
+h1{
+    font-size: 2.5em;
+    text-shadow: 4px 1px 5px aquamarine;
+    font-family: 'Bree Serif', serif;
+    transition: all ease 2s;
+}
+.but{
+    margin: 0 13vw 0 0;
+}
+#but1{
+    margin: 0;
+    padding: 0;
+    height: 3.8vh;
+    width: 5.4vw;
+    color: rgb(61,61,61);
+    background-color: aquamarine;
+    border-radius: 5px;
+    border-color: aquamarine;
+    box-shadow: 0 0 5px aquamarine,
+    0 0 13px aquamarine;
+    font-family: 'Signika', sans-serif;
+    transition: all 0.3s ease-out;
+}
+#but1:hover{
+    background-color: aquamarine;
+    border-color: aquamarine;
+    color: rgb(61,61,61);
+    transition: all 0.3s;
+    box-shadow: 0 0 10px 3px aquamarine,
+    0 0 20px aquamarine,0 0 2px aquamarine,
+    0 0 20px aquamarine,0 0 2px aquamarine;
+}
+h1:hover{
+    scale: 1.03;
+    transition: all linear 0.3s;
+    /* animation: hov 2s linear infinite alternate; */
+    animation: sc 2s linear infinite alternate ;
+}
+/* @keyframes hov {
+    0%{translate: -20px;} 
+    50%{translate: 20px;}
+    75%{translate:0px;}
+    100%{translate: -20px;}
+} */
+@keyframes sc {
+    0%{scale: 1;}
+    25%{scale: 1.05;}
+    50%{scale: 1;}
+    75%{scale: 0.5;}
+    100%{scale: 1;}
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 3.8vh;
+    width: 5.4vw;
+    color: rgb(61,61,61);
+    background-color: peru;
+    border-radius: 5px;
+    border-color: peru;
+    box-shadow: 0 0 5px peru,
+    0 0 13px peru;
+    font-family: 'Signika', sans-serif;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+}
+.time:hover{
+    scale:1.4;
+    transition: all 0.5s ease-out;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border-color: aquamarine;
+    box-shadow: 0 0 5px aquamarine,
+    0 0 13px aquamarine;
+}
+@media  screen and (max-width:1300px) {
+    .navbar{
+        display: flex;
+        height: 20vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name{
+        margin: 0;
+        padding: 0;
+    }
+    #but1{
+        height: 1.9em;
+        width: 4.9em;
+       margin-top: 2vh;
+       margin-left: 4vh;
+       margin-bottom: 1vh;
+    }
+    .time{
+        height: 1.7em;
+        width: 4.7em;
+        margin: 1vh 2vh 2vh 0;
+        
+    }
+}

@@ -1,0 +1,10 @@
+footer{
+    height: 5vh;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 4px 1px 5px aquamarine;
+    font-size: 12px;
+}
